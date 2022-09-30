@@ -112,7 +112,7 @@ header{
     background-color: beige;
 }
 .horarios{
-    display: flex;
+    display: none;
 
 }
 .campo-horarios{

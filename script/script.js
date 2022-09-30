@@ -60,10 +60,13 @@ document.addEventListener('DOMContentLoaded',function(){
         GetDiasCalendario(month,year);
     }
 
+    let select_dia = document.getElementsByClassName('dias');
+    select_dia.addEventListener("click", () => {
+        alert("TESTE");
+
+        // let horarios = document.getElementsByClassName('.horarios');
+        // horarios.style.display = "flex";
+    })
+
 })
 
-// const select_dia = document.getElementsByTagName('td');
-// document.addEventListener(select_dia,click ,function(){
-//     let horarios = document.getElementsByClassName('.horarios');
-//     horarios.setAttribute('display', 'flex');
-// })
