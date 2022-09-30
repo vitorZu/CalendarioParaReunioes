@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="text/javascript" src="./script/script.js"></script>
+    <title>Calenário - Reservar salas para reunião</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <h1>Calendário</h1>
+    </header>
+
+    <main class="conteudo">
+        <section class="calendario">
+            <div class="mes">
+                <button class="botao-mes" id="btn-ant"><</button>
+                <h2 id="mes">
+                    Setembro
+                </h2>
+                <button class="botao-mes" id="btn-prox">></button>
+            </div>
+            <div class="ano" id="ano">
+                <h3>
+                    2022
+                </h3>
+            </div>
+            <div class="tabela">
+                <table>
+                    <thead id="nome-semana">
+                        <tr class="semana">
+                            <td>Dom</td>
+                            <td>Seg</td>
+                            <td>Ter</td>
+                            <td>Qua</td>
+                            <td>Qui</td>
+                            <td>Sex</td>
+                            <td>Sab</td>
+                        </tr>
+                    </thead>
+                    <tbody id="nmr-dias">
+                        <tr class="dias" >
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dias">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dias">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dias">
+                            <td>1</td>
+                            <td>2</td>
+                            <td class=>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dias">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="event">4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="dias">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="horarios">
+            <fieldset class="campo-horarios">
+                <form type="post">
+                    <div class="div-solcitante">
+                        <label id="solicitante" class="label">Solicitante:</label>
+                        <p class="descricao">Nome da Pessoas que está solicitando a sala.</p>
+                        <input type="text" id="ipt-solicitante" class="input">
+                    </div>
+                    <div class="div-setor">
+                        <label id="setor" class="label">
+                            Setor:
+                        </label>
+                        <p class="descricao">Informe o setor que utilizará a sala.</p>
+                        <input type="text" id="ipt-setor" class="input">
+                    </div>
+                    <div class="div-horarioInicio">
+                        <label class="label" id="horarioInicio">
+                            Inicio da Reunião:
+                        </label>
+                        <p class="descricao">
+                            Informe o horario que irá inciar a reunião.
+                        </p>
+                        <input type="time" id="ipt-horarioInicio" class="input">
+                    </div>
+                    <div class="div-horarioFim">
+                        <label class="label" id="horarioFim">
+                            Término da Reunião:
+                        </label>
+                        <p class="descricao">
+                            Informe o horario que irá terminar a reunião.
+                        </p>
+                        <input type="time" id="ipt-horarioFim" class="input">
+                    </div>
+                    <div class="div-obs">
+                        <label class="label"id="obs">Observação:</label>
+                        <p class="descricao">Escreva Informações que achar útil.</p>
+                        <textarea id="ipt-obs" cols="40" rows="7" ></textarea>
+                    </div>
+                    <div class="div-btn">
+                        <button type="submit">Enviar!</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
