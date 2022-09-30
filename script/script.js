@@ -2,17 +2,17 @@ document.addEventListener('DOMContentLoaded',function(){
 
     const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
     const diasTabela = document.getElementById('nmr-dias');
-
-
+    
+    
     function GetDiasCalendario(mes,ano){
         document.getElementById('mes').innerHTML = meses[mes];
         document.getElementById('ano').innerHTML = ano;
-
-
+        
+        
         let primeiroDiadoMes = new Date(ano,mes,1).getDay()-1;
         let getultimoDiadoMes = new Date(ano,mes+1,0).getDate();
-    
-
+        
+        
         for(var i = -primeiroDiadoMes, index = 0 ; i < (42-primeiroDiadoMes) ; i++, index++){
             let dt = new Date(ano,mes,i);
             let dtNow = new Date();
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded',function(){
     let month = now.getMonth();
     let year = now.getFullYear();
     GetDiasCalendario(month,year);
-
+    
     const botao_proximo = document.getElementById('btn-prox');
     const botao_anterior = document.getElementById('btn-ant');
-
+    
     botao_proximo.onclick = function(){
         month++;
         if(month > 11){
@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded',function(){
         }
         GetDiasCalendario(month,year);
     }
-
-    let select_dia = document.getElementsByClassName('dias');
-    select_dia.addEventListener("click", () => {
-        alert("TESTE");
-
-        // let horarios = document.getElementsByClassName('.horarios');
-        // horarios.style.display = "flex";
-    })
-
+    
+    
+    horarios = document.getElementsByClassName("horarios");
+    var btn_on = document.querySelectorAll('.dia');
+    for(i = 0 ; i < btn_on.length ; i++){
+        btn_on[i].addEventListener("click", function(){
+            alert("TESTE");
+        })
+    }
 })
 
