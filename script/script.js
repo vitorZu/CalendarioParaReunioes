@@ -65,6 +65,11 @@ document.addEventListener('DOMContentLoaded',function(){
     for(i = 0 ; i < btn_on.length ; i++){
         btn_on[i].addEventListener("click", function(){
             document.querySelector('.horarios').style.display = 'flex';
+            btn_on[i].classList.add('selected');
+            // if(btn_on[i].classList.contains('mes-quevem') || btn_on[i].classList.contains('mes-anterior')){
+            //     alert("Selecione um dia desses mes ou troque de mês");
+            // }else{
+            // }
         })
     }
 })

@@ -111,10 +111,11 @@ header{
     border-radius: 10%;
     background-color: beige;
 }
-.horarios{
+#horarios{
     display: none;
 
 }
+
 .campo-horarios{
     background-color: azure;
     display: flex;
@@ -141,7 +142,12 @@ form{
     background-color: beige;
     color: black;
     height: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
+.selected{
+    background-color:  antiquewhite;
 }
 
 #ipt-obs{

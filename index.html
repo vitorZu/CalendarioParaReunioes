@@ -100,8 +100,8 @@
             </div>
         </section>
 
-        <section class="horarios">
-            <fieldset class="campo-horarios">
+        <section class="horarios" id="horarios">
+            <fieldset class="campo-horarios" >
                 <form type="post">
                     <div class="div-solcitante">
                         <label id="solicitante" class="label">Solicitante:</label>
@@ -117,21 +117,30 @@
                     </div>
                     <div class="div-horarioInicio">
                         <label class="label" id="horarioInicio">
-                            Inicio da Reunião:
+                            Horário da Reunião:
                         </label>
                         <p class="descricao">
-                            Informe o horario que irá inciar a reunião.
+                            Informe os horarios da reunião.
                         </p>
+                        <label class="label">Início:</label>
                         <input type="time" id="ipt-horarioInicio" class="input">
-                    </div>
-                    <div class="div-horarioFim">
                         <label class="label" id="horarioFim">
-                            Término da Reunião:
+                            Fim:
+                        </label>
+                        <input type="time" id="ipt-horarioFim" class="input">
+                    </div>
+                    <div id="div-sala">
+                        <label class="label" id="sala">
+                            Sala:
                         </label>
                         <p class="descricao">
-                            Informe o horario que irá terminar a reunião.
+                            Qual sala será usada para a reunião.
                         </p>
-                        <input type="time" id="ipt-horarioFim" class="input">
+                        <select id="sala" class="input">
+                            <option value="none">----</option>
+                            <option value="Sala1">Sala 1</option>
+                            <option value="Sala2">Sala 2</option>
+                        </select>
                     </div>
                     <div class="div-obs">
                         <label class="label"id="obs">Observação:</label>
