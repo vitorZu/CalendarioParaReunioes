@@ -61,11 +61,10 @@ document.addEventListener('DOMContentLoaded',function(){
     }
     
     
-    horarios = document.getElementsByClassName("horarios");
     var btn_on = document.querySelectorAll('.dia');
     for(i = 0 ; i < btn_on.length ; i++){
         btn_on[i].addEventListener("click", function(){
-            alert("TESTE");
+            document.querySelector('.horarios').style.display = 'flex';
         })
     }
 })
