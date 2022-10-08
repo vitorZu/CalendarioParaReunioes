@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',function(){
         for(var i = -primeiroDiadoMes, index = 0 ; i < (42-primeiroDiadoMes) ; i++, index++){
             let dt = new Date(ano,mes,i);
             let dtNow = new Date();
-            let tabeladedias = diasTabela.getElementsByTagName('td')[index];
+            var tabeladedias = diasTabela.getElementsByTagName('td')[index];
             tabeladedias.classList.remove('mes-anterior');
             tabeladedias.classList.remove('mes-quevem');
             tabeladedias.classList.remove('dia-atual');
@@ -60,17 +60,10 @@ document.addEventListener('DOMContentLoaded',function(){
         GetDiasCalendario(month,year);
     }
     
-    
-    var btn_on = document.querySelectorAll('.dia');
-    for(i = 0 ; i < btn_on.length ; i++){
-        btn_on[i].addEventListener("click", function(){
-            document.querySelector('.horarios').style.display = 'flex';
-            btn_on[i].classList.add('selected');
-            // if(btn_on[i].classList.contains('mes-quevem') || btn_on[i].classList.contains('mes-anterior')){
-            //     alert("Selecione um dia desses mes ou troque de mês");
-            // }else{
-            // }
-        })
+    dia1 = document.getElementById('dia1');
+    dia1.onclick = ()=>{
+        dia1.classList.add('selected');
+        alert("TESTE");
     }
-})
 
+})
