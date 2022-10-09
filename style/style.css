@@ -16,6 +16,19 @@ header{
     padding: 5px;
 }
 
+#horarios{
+    display: none;
+}
+
+/* #horarios{
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#horarios .mostrar{
+    opacity: 1;
+} */
+
 .conteudo {
     display: flex;
     flex-direction: row;
@@ -50,9 +63,12 @@ header{
     text-align: center;
     color: grey;
 }
-
-.tabela table .dias td:hover {
+.tabela table td:hover {
     background-color: antiquewhite;
+}
+
+.tabela table .mes-anterior td:hover {
+    background-color: rgb(223, 223, 223);
 }
 
 .tabela table .dias td {

@@ -40,25 +40,6 @@ document.addEventListener('DOMContentLoaded',function(){
     let year = now.getFullYear();
     GetDiasCalendario(month,year);
     
-    const botao_proximo = document.getElementById('btn-prox');
-    const botao_anterior = document.getElementById('btn-ant');
-    
-    botao_proximo.onclick = function(){
-        month++;
-        if(month > 11){
-            month = 0;
-            year++;
-        }
-        GetDiasCalendario(month,year);
-    }
-    botao_anterior.onclick = function(){
-        month--;
-        if(month < 0){
-            month = 11;
-            year--;
-        }
-        GetDiasCalendario(month,year);
-    }
     
     var iddias = document.querySelectorAll(".dia");
     iddias.forEach((element)=>{
@@ -66,9 +47,37 @@ document.addEventListener('DOMContentLoaded',function(){
             for(let i =0; i < iddias.length;i++){
                 iddias[i].classList.remove('selected');
             }
-            element.classList.add('selected');
-            console.log(element);
+            if(!(element.classList.contains('mes-quevem')||element.classList.contains('mes-anterior'))){
+                element.classList.add('selected');
+                document.querySelector('#horarios').style.display = 'flex';
+            }
+            
         });
+        const botao_proximo = document.getElementById('btn-prox');
+        const botao_anterior = document.getElementById('btn-ant');
+        
+        botao_proximo.onclick = function proximMes(){
+            for(let i =0; i < iddias.length;i++){
+                iddias[i].classList.remove('selected');
+            }
+            month++;
+            if(month > 11){
+                month = 0;
+                year++;
+            }
+            GetDiasCalendario(month,year);
+        }
+        botao_anterior.onclick = function mesAnterior(){
+            for(let i =0; i < iddias.length;i++){
+                iddias[i].classList.remove('selected');
+            }
+            month--;
+            if(month < 0){
+                month = 11;
+                year--;
+            }
+            GetDiasCalendario(month,year);
+        }
     })
 
 })
