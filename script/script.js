@@ -60,10 +60,78 @@ document.addEventListener('DOMContentLoaded',function(){
         GetDiasCalendario(month,year);
     }
     
-    dia1 = document.getElementById('dia1');
-    dia1.onclick = ()=>{
-        dia1.classList.add('selected');
-        alert("TESTE");
-    }
+    // var clicardias = document.getElementsByName("td");
+    // for(var i =0; i < clicardias.length; i++){
+    //     // clicardias.classList.remove('selected');
+    //     clicardias(i).onclick = ()=>{
+    //         alert('TESE');
+    //     }
+    //     clicardias(i).addEventListener("click", ()=>{
+    //         alert('TESTE');
+    //     })
 
-})
+    //     // if(tabeladedias(i).onclick == true){
+    //     //     tabeladedias(i).classList.add('selected');
+    //     //     alert('TESTE');
+    //     // }
+    // }
+    
+    // console.log(clicardias);
+
+    // var iddidas = [
+    //     'dia1',
+    //     'dia2',
+    //     'dia3',
+    //     'dia4',
+    //     'dia5',
+    //     'dia6',
+    //     'dia7',
+    //     'dia8',
+    //     'dia9',
+    //     'dia10',
+    //     'dia11',
+    //     'dia12',
+    //     'dia13',
+    //     'dia14',
+    //     'dia15',
+    //     'dia16',
+    //     'dia17',
+    //     'dia18',
+    //     'dia19',
+    //     'dia20',
+    //     'dia21',
+    //     'dia22',
+    //     'dia23',
+    //     'dia24',
+    //     'dia25',
+    //     'dia26',
+    //     'dia27',
+    //     'dia28',
+    //     'dia29',
+    //     'dia30',
+    //     'dia31',
+    //     'dia32',
+    //     'dia33',
+    //     'dia34',
+    //     'dia35',
+    //     'dia36',
+    //     'dia37',
+    //     'dia38',
+    //     'dia39',
+    //     'dia40',
+    //     'dia41',
+    //     'dia42'
+    // ];
+    
+    var iddias = document.getElementsByClassName("dia");
+    for(i = 0; i < iddias.length;i++){
+            iddias[i].addEventListener("click", ()=>{
+                console.log(iddias[i]);
+                // iddias[i].classList.add('selected');
+            })
+        }
+        console.log(iddias);
+
+    })
+    
+    
