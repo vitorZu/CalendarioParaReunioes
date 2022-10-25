@@ -20,14 +20,9 @@ header{
     display: none;
 }
 
-/* #horarios{
-    opacity: 0;
-    transition: opacity .5s;
+#marcados{
+    display: none;
 }
-
-#horarios .mostrar{
-    opacity: 1;
-} */
 
 .conteudo {
     display: flex;
@@ -128,7 +123,7 @@ header{
     background-color: beige;
 }
 
-.campo-horarios{
+fieldset{
     background-color: azure;
     display: flex;
     flex-direction: column;
@@ -139,6 +134,17 @@ header{
     width: 400px;
     box-shadow: 2px 2px 2px gray;
 }
+/* .campo-horarios{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    height: 550px;
+    border: none;
+    width: 400px;
+    box-shadow: 2px 2px 2px gray;
+} */
 
 form{
     height: 550px;

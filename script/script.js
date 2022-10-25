@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded',function(){
             if(!(element.classList.contains('mes-quevem')||element.classList.contains('mes-anterior'))){
                 element.classList.add('selected');
                 document.querySelector('#horarios').style.display = 'flex';
+                document.querySelector('#marcados').style.display = 'flex';
+
             }
             
         });
